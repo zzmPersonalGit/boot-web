@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>欢迎</h1>
+测试REST风格
+<form action="/user" method="get">
+    <input value="REST-GET 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input value="REST-POST 提交" type="submit">
+</form>
+<form action="/user" method="post">
+<!--    REST风格必须带的隐藏参数，会被拦截器拦截，更改请求为该隐藏的值-->
+    <input name="_method" type="hidden" value="delete">
+    <input value="REST-DELETE 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="put">
+    <input value="REST-PUT 提交" type="submit">
+</form>
+</body>
+</html>
