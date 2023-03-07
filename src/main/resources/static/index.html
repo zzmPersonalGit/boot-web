@@ -22,5 +22,18 @@
     <input name="_method" type="hidden" value="put">
     <input value="REST-PUT 提交" type="submit">
 </form>
+
+
+测试基本注解
+<ul>
+    <a href="car/3/owner/lisi?age=18&inters=basketball&inters=game">car/{id}/owner/{username}</a>
+</ul>
+
+<form action="/save" method="post">
+    测试@RequestBody获取数据 <br>
+    用户名：<input name="username"><br>
+    邮箱：<input name="email"><br>
+    <input type="submit" value="提交">
+</form>
 </body>
 </html>
