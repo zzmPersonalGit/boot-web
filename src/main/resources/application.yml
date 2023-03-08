@@ -17,3 +17,6 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+  banner:
+    location: banner.txt
+    charset: GBK
