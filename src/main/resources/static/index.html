@@ -35,26 +35,5 @@
     邮箱：<input name="email"><br>
     <input type="submit" value="提交">
 </form>
-
-/cars/{path}?xxx=xxx&aaa=ccc queryString 查询字符串。@RequestParam;<br/>
-/car/{path;low=34;brand=byd,auid,yd} 矩阵变量 <br/>
-页面开发，ccokie禁用后session里面内容怎么使用；
-url重写/abc;jsessionid=xxx 把cookie的值使用矩阵变量得方式进行传递
-
-<a href="/cars/sell;low=34;brand=byd,auid,yd">@MatrixVariable(矩阵变量)</a><br>
-<a href="/cars/sell;low=34;brand=byd;brand=auid;brand=yd">@MatrixVariable(矩阵变量)</a><br>
-<a href="/boss/1;age=20/2;age=10">@MatrixVariable(矩阵变量)/boss/{bossId}/{empId}</a><br>
-
-
-测试封装
-<form action="/saveuser" method="post">
-    姓名：<input name="userName" value="张三"/><br>
-    年龄：<input name="age" value="18"/><br>
-    生日：<input name="birth" value="2001/4/27"/><br>
-    宠物姓名：<input name="pet.name" value="修够"/><br>
-    宠物年龄：<input name="pet.age" value="4"/><br>
-    <input type="submit" value="提交"/>
-</form>
-
 </body>
 </html>
