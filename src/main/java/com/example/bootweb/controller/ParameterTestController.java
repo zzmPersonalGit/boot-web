@@ -1,5 +1,6 @@
 package com.example.bootweb.controller;
 
+import com.example.bootweb.bean.Person;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -55,5 +56,10 @@ public class ParameterTestController {
         Map<String,Object> map = new HashMap<>();
         map.put("content",content);
         return map;
+    }
+
+    @PostMapping("/saveuser")
+    public Person saveuser(Person person){
+        return person;
     }
 }
