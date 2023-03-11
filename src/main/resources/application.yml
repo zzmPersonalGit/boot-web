@@ -17,6 +17,13 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+#    开启参数方式内容协商  发送请求时带上format=xml/json字段 例：http://localhost:8080/test/person?format=json
+    contentnegotiation:
+      favor-parameter: true
   banner:
     location: banner.txt
     charset: GBK
+#    添加前置路径，以后项目访问路径必须以该前置路径开始
+server:
+  servlet:
+    context-path: /world
